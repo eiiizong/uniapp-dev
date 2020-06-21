@@ -2,21 +2,5 @@
 // mixins
 @import "./mixins/text-overflow.scss";
 
-// 全局变量 声明
-$body-bgc: #f5f5f5;
-$space-LR: 24rpx;
-$border-color: #eee;
-$theme-color: #fa7570;
-
-$wrapper-border-color: #f4ca94;
-$wrapper-border-radius: 12rpx;
-$wrapper-background-image: linear-gradient(0deg, #faf6f0 0%, #ffffff 100%);
-$wrapper-background-image-active: linear-gradient(0deg,#f3d29a 0%, #f5e8c8 100%);
-$color: #f4ca94;
-
-$foods-space-left: 12rpx;
-$foods-menu-width: 158rpx;
-$foods-menu-height: 100rpx;
-$foods-menu-color: #65625d;
-$foods-menu-active-color: #bf944a;
-$foods-menu-font-size: 28rpx;
+// 页面背景色
+$page-background-color: #f5f5f5;

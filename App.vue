@@ -10,5 +10,6 @@ export default {
 </script>
 
 <style lang="scss">
+@import '//at.alicdn.com/t/font_1898250_0nyh3p65y5j.css';
 @import './common/styles/scss/index.scss';
 </style>

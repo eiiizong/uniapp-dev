@@ -14,70 +14,45 @@
         "navigationBarTitleText": "我的"
       }
     },
-
     {
-      "path": "pages/tabbar/shoppingCart/shoppingCart",
+      "path": "pages/tabbar/examples/examples",
       "style": {
-        "navigationBarTitleText": "购物车"
-      }
-    },
-    {
-      "path": "pages/tabbar/order/order",
-      "style": {
-        "navigationBarTitleText": "订单"
-      }
-    },
-    {
-      "path": "pages/tabbar/shop/shop",
-      "style": {
-        "navigationBarTitleText": "商城"
+        "navigationBarTitleText": "组件"
       }
     }
   ],
   "globalStyle": {
     "backgroundColor": "#f5f5f5",
-    "navigationBarBackgroundColor": "#be3a3f",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarBackgroundColor": "#007AFF",
+    "navigationBarTitleText": "uniApp开发基本框架",
     "enablePullDownRefresh": false,
     "backgroundTextStyle": "dark",
     "navigationBarTextStyle": "white",
     "navigationStyle": "default"
   },
   "tabBar": {
-    "color": "#1F1C18",
-    "backgroundColor": "#fff",
-    "selectedColor": "#C0A062",
-    "borderStyle": "white",
+    "color": "#7A7E83",
+    "backgroundColor": "#f8f8f8",
+    "selectedColor": "#007AFF",
+    "borderStyle": "black",
     "list": [
       {
         "text": "首页",
         "pagePath": "pages/tabbar/home/home",
-        "iconPath": "static/images/tabs/home.png",
-        "selectedIconPath": "static/images/tabs/home-active.png"
+        "iconPath": "static/images/tabbar/home.png",
+        "selectedIconPath": "static/images/tabbar/home-active.png"
       },
       {
-        "text": "商城",
-        "pagePath": "pages/tabbar/shop/shop",
-        "iconPath": "static/images/tabs/shop.png",
-        "selectedIconPath": "static/images/tabs/shop-active.png"
-      },
-      {
-        "text": "购物车",
-        "pagePath": "pages/tabbar/shoppingCart/shoppingCart",
-        "iconPath": "static/images/tabs/shopping-car.png",
-        "selectedIconPath": "static/images/tabs/shopping-car-active.png"
-      },
-      {
-        "text": "订单",
-        "pagePath": "pages/tabbar/order/order",
-        "iconPath": "static/images/tabs/orders.png",
-        "selectedIconPath": "static/images/tabs/orders-active.png"
+        "text": "组件",
+        "pagePath": "pages/tabbar/examples/examples",
+        "iconPath": "static/images/tabbar/examples.png",
+        "selectedIconPath": "static/images/tabbar/examples-active.png"
       },
       {
         "text": "我的",
         "pagePath": "pages/tabbar/my/my",
-        "iconPath": "static/images/tabs/my.png",
-        "selectedIconPath": "static/images/tabs/my-active.png"
+        "iconPath": "static/images/tabbar/my.png",
+        "selectedIconPath": "static/images/tabbar/my-active.png"
       }
     ],
     "position": "bottom"

@@ -57,6 +57,10 @@ const request = (url, data, header = {}, method = 'GET') => {
 };
 
 /**
+ *  ======================   以上api已根据微信官方接口确定注释参数类型    =======================
+ */
+
+/**
  * 拨打电话
  * @param {String} phoneNumber 电话号码
  */
