@@ -1,78 +1,13 @@
 // 常量 不要改变
 
-
-// 初始化菜品列表
-const INIT_CATEGORY_LIST = 'INIT_CATEGORY_LIST'
-
-// 改变用户信息
-const CHANGE_USERINFO = 'CHANGE_USERINFO'
-// 改变店铺信息
-const CHANGE_SHOPINFO = 'CHANGE_SHOPINFO'
-// 改变授权登陆状态
-const CHANGE_AUTHORIZE_STATUS = 'CHANGE_AUTHORIZE_STATUS'
-// 改变注册状态
-const CHANGE_REGISTER_STATUS = 'CHANGE_REGISTER_STATUS'
-// 清空购物车列表
-const CLEAR_SHOPPING_CARET_LIST = 'CLEAR_SHOPPING_CARET_LIST'
-// 改变点餐状态
-const CHANGE_ORDERING_STATUS = 'CHANGE_ORDERING_STATUS'
-// 改变菜品列表
-const CHANGE_CATEGORY_LIST = 'CHANGE_CATEGORY_LIST'
-// 改变配送地址
-const CHANGE_DELIVERY_ADDRESS= 'CHANGE_DELIVERY_ADDRESS'
-// 改变 openid
-const CHANGE_OPEN_ID= 'CHANGE_OPEN_ID'
 // 改变 access-token
 const CHANGE_ACCESS_TOKEN = 'CHANGE_ACCESS_TOKEN'
-// 改变 登陆请求状态
-const CHANGE_LOGIN_REQUEST_COMPLATED_STATUS = 'CHANGE_LOGIN_REQUEST_COMPLATED_STATUS'
 
-// 获取配送地址
-const GET_OPEN_ID= 'openid'
-// 获取配送地址
-const GET_DELIVERY_ADDRESS= 'deliveryAddress'
-// 获取用户注册状态 用户是否注册
-const GET_REGISTER_STATUS = 'isRegister' 
-// 获取用户信息
-const GET_USERINFO = 'userInfo' 
-// 获取购物车列表
-const GET_SHOPPING_CARET_LIST = 'shoppingCartList' 
-// 获取店铺信息
-const GET_SHOPINFO = 'shopInfo' 
-// 获取授权状态 用户是否授权获取用户信息
-const GET_AUTHORIZE_STATUS = 'isAuthorize' 
-// 获取点餐状态
-const GET_ORDERING_STATUS = 'isTakeout'
-// 获取点餐状态
+
+// 获取 access-token
 const GET_ACCESS_TOKEN = 'accessToken'
-// 获取 登陆请求完成状态
-const GET_LOGIN_REQUEST_COMPLATED_STATUS = 'loginRequestIsCompleted'
-// 获取菜品列表
-const GET_CATEGORY_LIST = 'categoryList'
-export {
-    INIT_CATEGORY_LIST,
 
-    CLEAR_SHOPPING_CARET_LIST,
-    CHANGE_SHOPINFO,
-    CHANGE_USERINFO,
-    CHANGE_AUTHORIZE_STATUS,
-    CHANGE_REGISTER_STATUS,
-    CHANGE_ORDERING_STATUS,
-    CHANGE_CATEGORY_LIST,
-    CHANGE_DELIVERY_ADDRESS,
-    CHANGE_ACCESS_TOKEN,
-    CHANGE_OPEN_ID,
-    CHANGE_LOGIN_REQUEST_COMPLATED_STATUS,
-    GET_LOGIN_REQUEST_COMPLATED_STATUS,
-    GET_OPEN_ID,
-    GET_DELIVERY_ADDRESS,
-    GET_ORDERING_STATUS,
-    GET_SHOPINFO,
-    GET_SHOPPING_CARET_LIST,
-    GET_USERINFO,
-    GET_REGISTER_STATUS,
-    GET_AUTHORIZE_STATUS,
+export {
     GET_ACCESS_TOKEN,
-    GET_CATEGORY_LIST
-    
+    CHANGE_ACCESS_TOKEN
 }

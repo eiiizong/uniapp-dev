@@ -1,26 +1,27 @@
-// 包装 uniapp API 接口
+// Promise 重新封装 uniapp API 接口
+
+import config from '../../config';
+
 // const uni = uni;
-const requerstUrlPrefix = 'https://take.kbftech.cn/api/';
+
 /**
- * ajax请求
- * @param {*} url
- * @param {*} data
- * @param {*} header
- * @param {*} method
+ * ajax 数据请求
+ * @param {String} url 请求地址
+ * @param {Object} data 请求参数 body
+ * @param {Object} header 请求参数 header
+ * @param {String} method 请求方式 默认 GET
  */
 const request = (url, data, header = {}, method = 'GET') => {
   if (!url) {
-    console.error('url 为空');
+    console.warn('请求参数url为空, 请求终止');
   }
   header = {
     ...header,
     'device-type': 'wechat',
     'content-type': 'application/json',
   };
-  // const urlPrefix = 'http://rap2.taobao.org:38080/app/mock/165482/api/';
-  // const urlPrefix = `https://www.fastmock.site/mock/6a1c89274e7e84c0ca9c3213bb742dae/api/`
   return new Promise((resolve, reject) => {
-    url = requerstUrlPrefix + url;
+    url = config.requestUrl + url;
     uni.request({
       url,
       data,
@@ -28,21 +29,33 @@ const request = (url, data, header = {}, method = 'GET') => {
       method,
       success: res => {
         const resData = res.data;
+        // 请求成功 状态码为200 &&
         if (res.statusCode === 200 && resData && resData.status === '200') {
+          console.log(`
+            请求地址${url},数据返回结果:
+            ${resData.data}
+          `);
           resolve(resData.data);
-          // console.log('request success', resData);
         } else {
+          console.log(`
+            请求地址${url},数据返回结果:
+            ${res}
+          `);
           showToast(resData.msg);
           reject(res);
         }
       },
       fail: err => {
-        // console.log('request fail', err);
+        console.log(`
+          请求地址${url},数据返回结果:
+          ${err}
+        `);
         reject(err);
       },
     });
   });
 };
+
 /**
  * 拨打电话
  * @param {String} phoneNumber 电话号码

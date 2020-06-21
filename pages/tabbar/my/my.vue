@@ -16,22 +16,20 @@ export default {
     return {};
   },
   // 监听页面加载，其参数为上个页面传递的数据，参数类型为Object（用于页面传参）
-  onLoad() {
-  },
+  onLoad() {},
   // 监听页面初次渲染完成
-  onReady() {},
+  onReady() {
+    console.log(this);
+  },
   // 监听页面显示
-  onShow() {
-  },
+  onShow() {},
   // 监听页面隐藏
-  onHide() {
-    // console.log(this.$options.name + '页面 onHide');
-  },
+  onHide() {},
   methods: {},
   computed: {
     ...mapGetters([GET_ACCESS_TOKEN]),
   },
-  watch: {}
+  watch: {},
 };
 </script>
 
