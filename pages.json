@@ -1,6 +1,11 @@
 {
   "pages": [
-    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/tabbar/examples/examples",
+      "style": {
+        "navigationBarTitleText": "组件"
+      }
+    },
     {
       "path": "pages/tabbar/home/home",
       "style": {
@@ -12,12 +17,6 @@
       "path": "pages/tabbar/my/my",
       "style": {
         "navigationBarTitleText": "我的"
-      }
-    },
-    {
-      "path": "pages/tabbar/examples/examples",
-      "style": {
-        "navigationBarTitleText": "组件"
       }
     }
   ],
@@ -59,8 +58,21 @@
   },
   "subPackages": [
     {
-      "root": "pages/other",
-      "pages": []
+      "root": "pages/examples",
+      "pages": [
+        {
+          "path": "input/input",
+          "style": {
+            "navigationBarTitleText": "Input"
+          }
+        },
+        {
+          "path": "button/button",
+          "style": {
+            "navigationBarTitleText": "Button"
+          }
+        }
+      ]
     }
   ],
   "condition": {
