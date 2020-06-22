@@ -63,13 +63,20 @@
         {
           "path": "input/input",
           "style": {
-            "navigationBarTitleText": "Input"
+            "navigationBarTitleText": "Input 输入框"
           }
         },
         {
           "path": "button/button",
           "style": {
-            "navigationBarTitleText": "Button"
+            "navigationBarTitleText": "Button 按钮"
+          }
+        },
+        {
+          "path": "recordVideo/recordVideo",
+          "style": {
+            "navigationBarTitleText": "视频录制",
+            "navigationStyle": "custom"
           }
         }
       ]
@@ -82,6 +89,11 @@
       {
         "name": "tabbar",
         "path": "pages/tabbar/home/home",
+        "query": ""
+      },
+      {
+        "name": "test",
+        "path": "pages/examples/recordVideo/recordVideo",
         "query": ""
       }
     ]
